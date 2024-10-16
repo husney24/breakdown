@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>Breakdown</title>
   </head>
   <body>
@@ -26,11 +26,13 @@
 
     <header>
       <div class="logo">
-        <img src="./assets/img/Your_Logo-removebg-preview.png" alt="Company Logo" />
+        <img
+          src="./assets/icons/logo2blue-1-removebg-preview.png"
+          alt="Company Logo"
+        />
       </div>
       <nav>
         <ul id="menu">
-
           <!-- <li>
             Services
             <ul class="dropdown">
@@ -48,7 +50,7 @@
           </li> -->
 
           <li>
-            Breakdown Recovery
+            <a href="./recovery.html">Breakdown Recovery</a>
             <i class="fas fa-chevron-down"></i>
             <ul class="dropdown">
               <li>Batley car recovery</li>
@@ -159,11 +161,12 @@
 
           <!-- <li>About Us</li>
           <li>Contact Us</li> -->
-          <li>Flat Tyre Repair</li>
+          <li><a href="./tyre.html">Flat Tyre Repair</a></li>
           <li>Tyre Changes</li>
           <li>Jump Starts</li>
           <li>Accident Recovery</li>
           <li>Vehicle Towing</li>
+          <li><a href="./contact.html">Contact Us</a></li>
         </ul>
 
         <div class="toggle-icon" id="menuToggle">&#9776;</div>
@@ -178,12 +181,16 @@
           professional roadside assistance, ensuring a swift return to the road
           within 30-45 minutes.
         </h2>
-        <button>Get Help Now</button>
+        <button class="large-button">
+          Call Us Now
+          <i class="fas fa-phone"></i>
+        </button>
       </div>
     </section>
 
     <div class="wp">
       <img src="./assets/icons/logo.png" alt="" />
+      <span class="wp-message">Feel free to reach out anytime!</span>
     </div>
 
     <div class="arrival-ad">
@@ -206,7 +213,9 @@
           placeholder="Enter your postcode or closest town"
         />
         <br />
-        <a href="#" class="cta-button">Check Availability Near You</a>
+        <a id="bttn" href="#" class="cta-button"
+          >Check Availability Near You<i class="fas fa-chevron-right"></i>
+        </a>
         <div class="partner-logos">
           <img
             src="./assets/img/AA-Approved-Repairer.png"
@@ -229,16 +238,25 @@
       <h2>Emergency Vehicle Recovery in 4 Easy Steps</h2>
       <div class="steps-container">
         <div class="step">
-          <img src="./assets/img/11423715.jpg" alt="Send Your Location" />
+          <img src="./assets/svg/loct.png" alt="Send Your Location" />
           <p>Send Your Location</p>
+        </div>
+        <div class="arrow">
+          <i class="fas fa-arrow-right"></i>
         </div>
         <div class="step">
           <img src="./assets/img/11423715.jpg" alt="Arrival From 30 Minutes" />
           <p>Arrival From 30 Minutes</p>
         </div>
+        <div class="arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
         <div class="step">
           <img src="./assets/img/11423715.jpg" alt="Vehicle Health Check" />
           <p>Vehicle Health Check</p>
+        </div>
+        <div class="arrow">
+          <i class="fas fa-arrow-right"></i>
         </div>
         <div class="step">
           <img
@@ -266,8 +284,8 @@
           />
           <h2 class="card-title">Breakdown Recovery</h2>
           <p class="card-description">
-            Zaman Recovery gets you moving quickly. If your vehicle breaks down,
-            our team are here to help 24/7.
+            Breakdown Recovery provides 24/7 assistance to get you moving
+            quickly. Our team is ready to help when your vehicle breaks down.
           </p>
         </div>
         <div class="card">
@@ -277,8 +295,9 @@
           />
           <h2 class="card-title">Mobile Tyre Fitting</h2>
           <p class="card-description">
-            Need new tyres? We come to you. Professional mobile tyre fitting
-            service wherever you are.
+            Mobile Tyre Fitting brings our services directly to you. We quickly
+            replace your flat tire on-site, ensuring your safety and
+            convenience.
           </p>
         </div>
         <div class="card">
@@ -288,8 +307,9 @@
           />
           <h2 class="card-title">Accident Recovery</h2>
           <p class="card-description">
-            We ensure safe vehicle recovery after accidents - no matter where
-            you are or the condition of your vehicle.
+            In case of an accident, our Accident Recovery service is here to
+            help. We safely transport your damaged vehicle to your preferred
+            location.
           </p>
         </div>
         <div class="card">
@@ -297,10 +317,10 @@
             src="./assets/img/jump-start-banner-1536x762.jpg"
             alt="Car Jump Starting"
           />
-          <h2 class="card-title">Car Jump Starting</h2>
+          <h2 class="card-title">Vehicle towing</h2>
           <p class="card-description">
-            Battery dead? Don't panic! We provide jump starts day or night,
-            getting you back on the road fast.
+            Our Vehicle Towing service operates 24/7, ready to transport your
+            vehicle safely whenever you need us, day or night.
           </p>
         </div>
       </div>
@@ -310,10 +330,11 @@
             src="./assets/img/Accident-Recovery-by-Zaman-Auto-UK-1536x762.jpg"
             alt="Breakdown Recovery"
           />
-          <h2 class="card-title">Breakdown Recovery</h2>
+          <h2 class="card-title">Winching service</h2>
           <p class="card-description">
-            Zaman Recovery gets you moving quickly. If your vehicle breaks down,
-            our team are here to help 24/7.
+            Our Winching Service safely extracts vehicles from difficult
+            terrains. Whether stuck in a ditch or mud, we’ll get you out
+            quickly.
           </p>
         </div>
         <div class="card">
@@ -321,10 +342,10 @@
             src="./assets/img/Breakdown-Recovery-service-by-zaman-auto-UK-1536x762.jpg"
             alt="Mobile Tyre Fitting"
           />
-          <h2 class="card-title">Mobile Tyre Fitting</h2>
+          <h2 class="card-title">Stuck in mud service</h2>
           <p class="card-description">
-            Need new tyres? We come to you. Professional mobile tyre fitting
-            service wherever you are.
+            If you are stuck in mud, our Stuck in Mud Service specializes in
+            safely pulling your vehicle out of tricky situations without delay.
           </p>
         </div>
         <div class="card">
@@ -332,10 +353,11 @@
             src="./assets/img/Flat-Tyre-1536x762.jpg"
             alt="Accident Recovery"
           />
-          <h2 class="card-title">Accident Recovery</h2>
+          <h2 class="card-title">Transporting cars</h2>
           <p class="card-description">
-            We ensure safe vehicle recovery after accidents - no matter where
-            you are or the condition of your vehicle.
+            Our Transporting Cars service ensures safe transportation for your
+            vehicle, whether it's a short distance or long haul. We handle your
+            car with care.
           </p>
         </div>
         <div class="card">
@@ -343,10 +365,33 @@
             src="./assets/img/jump-start-banner-1536x762.jpg"
             alt="Car Jump Starting"
           />
-          <h2 class="card-title">Car Jump Starting</h2>
+          <h2 class="card-title">Trade plate drivers</h2>
           <p class="card-description">
-            Battery dead? Don't panic! We provide jump starts day or night,
-            getting you back on the road fast.
+            Our Trade Plate Drivers provide secure delivery and collection
+            services for your vehicles, ensuring safe transit with experienced
+            drivers.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/jump-start-banner-1536x762.jpg"
+            alt="Car Jump Starting"
+          />
+          <h2 class="card-title">Jump start service / flat battery</h2>
+          <p class="card-description">
+            Our Jump Start Service is ready to revive your flat battery on-site,
+            getting you back on the road quickly and efficiently.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./assets/img/jump-start-banner-1536x762.jpg"
+            alt="Car Jump Starting"
+          />
+          <h2 class="card-title">Fuel delivery</h2>
+          <p class="card-description">
+            Out of fuel? Our Fuel Delivery service brings the fuel to you,
+            ensuring you’re back on your way without any hassle.
           </p>
         </div>
       </div>
@@ -381,7 +426,7 @@
         </div>
         <div class="feature">
           <img
-            src="./assets/icons/clock.png"
+            src="./assets/icons/settings.png"
             alt="Vehicle Recovery From 30 Minutes"
           />
           <h3>Vehicle Recovery From 30 Minutes</h3>
@@ -422,7 +467,10 @@
         </div>
       </div>
       <br /><br />
-      <a href="#" class="cta-button">Contact Us Now</a>
+      <a href="#" class="cta-button2"
+        >Contact Us Now
+        <i class="fas fa-phone"></i>
+      </a>
     </div>
 
     <section class="assistance-section">
@@ -434,14 +482,18 @@
           <h2>24/7 Vehicle Assistance & Recovery Services</h2>
           <br />
           <p>
-            Zaman Recovery provides emergency vehicle recovery across the whole
-            of the North West. We have an experienced and professional team who
-            will be quick to your rescue and detect the issue with your vehicle.
-            Depending on the issue, they will either get you back on the road or
-            recover your vehicle to a place of your choice.
+            Breakdown offers fast and reliable emergency vehicle recovery
+            services across the North West. Our skilled team is available around
+            the clock, ready to respond quickly. Whether it's a minor fix to get
+            you back on the road or transporting your vehicle to your preferred
+            location, we handle every situation with professionalism and care.
+            Wherever you are, we’ll be there to assist.
           </p>
           <br /><br />
-          <button class="call-button">Call Us Now</button>
+          <button class="call-button">
+            Call Us Now
+            <i class="fas fa-phone"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -459,7 +511,7 @@
       <div class="footer-left">
         <div class="footer-logo">
           <img
-            src="./assets/img/Your_Logo-removebg-preview.png"
+            src="./assets/icons/logo2blue-1-removebg-preview.png"
             alt="Company Logo"
           />
         </div>
@@ -517,14 +569,6 @@
         <p>©THE WEBTRIX LIMITED 2024</p>
       </div>
     </footer>
-
-    <script>
-      document
-        .getElementById("menuToggle")
-        .addEventListener("click", function () {
-          var menu = document.getElementById("menu");
-          menu.classList.toggle("active");
-        });
-    </script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
