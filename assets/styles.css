@@ -60,7 +60,8 @@ nav ul {
 
 nav ul li {
   font-weight:600 ;
-  margin: 0 15px;
+  font-size: 15px;
+  margin: 0 10px;
   cursor: pointer;
 }
 nav ul li a{
@@ -111,6 +112,39 @@ nav ul li:hover::after {
 .wp img:hover {
   transform: scale(1.1);
 }
+
+.circle-ripple {
+  background-color: #25D366; /* WhatsApp green */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5vw;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(66, 219, 135, 0.6); /* Initial glow */
+  transition: all .3s ease-in-out;
+  animation: pulse 1.5s infinite;
+}
+
+/* Keyframe for the pulse (blinking) effect */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 15px rgba(66, 219, 135, 0.6);
+  }
+  50% {
+      transform: scale(1.1); /* Slight zoom for pulse effect */
+      box-shadow: 0 0 30px rgba(66, 219, 135, 0.9); /* Stronger glow */
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 15px rgba(66, 219, 135, 0.6);
+  }
+}
+
 
 .wp-message {
   position: absolute;
@@ -283,6 +317,20 @@ i.fas.fa-chevron-down {
 }
 .conhero{
   background-image: url("https://images.unsplash.com/photo-1591278169757-deac26e49555?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+
+}
+.termhero{
+  background-image: url("./img/terms.png");
   height: 100vh;
   display: flex;
   align-items: center;
@@ -887,91 +935,82 @@ i.fas.fa-chevron-down {
   }
 }
 
-
 .contact-section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
 .contact-card {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%; /* Full width */
-  max-width: 800px; /* Optional: Max width for larger screens */
-  margin-bottom: 20px;
-}
-
-.contact-card h2 {
-  margin-bottom: 15px;
   display: flex;
   justify-content: center;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
 }
 
 .input-group {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 15px;
 }
 
 .input-field {
-  flex: 1;
-  margin-right: 10px; /* Space between input fields */
+  margin-bottom: 10px;
 }
 
-.input-field:last-child {
-  margin-right: 0; /* Remove margin for the last input */
-}
-
-.contact-card label {
+label {
   display: block;
   margin-bottom: 5px;
 }
 
-.contact-card input,
-.contact-card select,
-.contact-card textarea {
+input, textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 8px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
-.contact-card button {
-  background-color: #25D366;
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
   color: white;
   border: none;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
 }
 
-.contact-card button:hover {
-  background-color: #219e54;
+.submit:hover {
+  background-color: #0056b3;
 }
 
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.terms-and-conditions {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 20px 20px;
+
 }
 
-.address {
-  flex: 1;
-  margin-right: 20px;
+.terms-and-conditions h2, .terms-and-conditions h3 {
+  margin-top: 20px;
+  color: #333;
 }
 
-.map {
-  flex: 1;
-}
-
-.map h3 {
+.terms-and-conditions p {
   margin-bottom: 10px;
+  line-height: 1.6;
+  color: #555;
 }
 
+.terms-and-conditions ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
 
+.terms-and-conditions ul li {
+  margin-bottom: 5px;
+}
